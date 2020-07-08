@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <b-nav tabs>
+      <b-nav-item disabled>
+        <b>Fancy Quiz App</b>
+      </b-nav-item>
+      <b-nav-item disabled>Counter: {{currentScore}}/{{totalAnswered}}</b-nav-item>
+    </b-nav>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    currentScore: Number,
+    totalAnswered: Number
+  }
+};
+</script>
